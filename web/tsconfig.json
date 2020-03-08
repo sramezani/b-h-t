@@ -22,8 +22,8 @@
 		"isolatedModules": true,
 		"baseUrl": ".",
 		"paths": {
-			"*": ["src/*"],
-			"@component": ["component/*"],
+			"@component": ["src/component"],
+			"@colors": ["src/theme/colors"],
 		}
 	},
 	"exclude": [

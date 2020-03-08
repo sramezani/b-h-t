@@ -3,9 +3,10 @@
     "plugins": [
         ["module-resolver", {
             "extensions": [".js", ".jsx", ".es", ".es6", ".ts", ".tsx",  ".mjs"],
-            "root": ["./src"],
+            "root": ["."],
             "alias": {
-              "@component": "./component"
+              "@component": "./src/component",
+              "@colors": "./src/theme/colors"
             }
         }],
         ["styled-components", { "ssr": true }]

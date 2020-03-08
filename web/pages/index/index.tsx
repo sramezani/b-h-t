@@ -1,8 +1,8 @@
 import React from 'react';
 
-// import { BoxGray } from "@component";
+import { BoxGray, BoxGreen, BoxLemon, BoxYellow } from "@component";
 
-import { BoxGray, BoxGreen, BoxLemon, BoxYellow } from "../../src/component";
+// import { BoxGray, BoxGreen, BoxLemon, BoxYellow } from "../../src/component";
 
 import { Container, Left, Middle, Right, LeftTop, LeftBottom } from "./Style";
 

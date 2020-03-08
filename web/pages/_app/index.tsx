@@ -3,7 +3,9 @@ import React from 'react'
 import { ThemeProvider } from 'styled-components'
 
 import '../../src/theme/style.css';
-import { Colors } from '../../src/theme/colors';
+// import { Colors } from '../../src/theme/colors';
+
+import { Colors } from '@colors';
 
 import { Layout } from "../../src/component";
 
