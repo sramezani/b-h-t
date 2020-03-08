@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, ScrollView } from 'react-native';
+import { StyleSheet, View, ScrollView, SafeAreaView } from 'react-native';
 
 // Components
 import { Header, Footer, BoxGray, BoxGreen, BoxLemon, BoxYellow } from "../../../components";
@@ -54,28 +54,30 @@ class HomeView extends React.Component<Props, State> {
 
     render() {
         return (
-            <ScrollView>
-                <View style={styles.header}>
-                    <Header />
-                </View>
-                <View style={styles.topBox}>
-                    <BoxLemon />
-                </View>
-                <View style={styles.middleBox}>
-                    <View style={styles.middleLeft}>
-                        <BoxGreen />
+            <SafeAreaView>
+                <ScrollView>
+                    <View style={styles.header}>
+                        <Header />
                     </View>
-                    <View style={styles.middleRight}>
-                        <BoxGray />
+                    <View style={styles.topBox}>
+                        <BoxLemon />
                     </View>
-                </View>
-                <View style={styles.bottomBox}>
-                    <BoxYellow />
-                </View>
-                <View style={styles.footer}>
-                    <Footer />
-                </View>
-            </ScrollView>
+                    <View style={styles.middleBox}>
+                        <View style={styles.middleLeft}>
+                            <BoxGreen />
+                        </View>
+                        <View style={styles.middleRight}>
+                            <BoxGray />
+                        </View>
+                    </View>
+                    <View style={styles.bottomBox}>
+                        <BoxYellow />
+                    </View>
+                    <View style={styles.footer}>
+                        <Footer />
+                    </View>
+                </ScrollView>
+            </SafeAreaView>
         );
     }
 }
